@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     {% block head %}
-    <title>{% block title %}{% endblock %} - My Webpage</title>
+    <title>{% block title %}{% endblock %}</title>
     {% endblock %}
 </head>
 <body>
+    <p><a class="btn btn-sm btn-secondary" href="/users">Users</a></p>
+    <p><a class="btn btn-sm btn-secondary" href="/">Homepage</a></p>
     <div id="content">{% block content %}{% endblock %}</div>
 </body>
 </html>
